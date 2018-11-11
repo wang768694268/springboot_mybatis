@@ -49,13 +49,5 @@ public class MapperController {
         userMapper.deleteUserById(3);
     }
 
-    /**
-     * redis
-     * @return
-     */
-    @RequestMapping("/findByService")
-    public List<User> findByService() {
-        List<User> list = userService.findAll();
-        return list;
-    }
+
 }
